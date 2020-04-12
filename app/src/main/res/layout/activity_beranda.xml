@@ -60,7 +60,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
-                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                android:src="@drawable/ic_exit_to_app_black_24dp" />
         </RelativeLayout>
 
     </ScrollView>

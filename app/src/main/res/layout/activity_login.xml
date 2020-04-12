@@ -37,7 +37,7 @@
                     style="@style/viewParent.headerText.NoMode"
                     android:layout_centerHorizontal="true"
                     android:textSize="27dp"
-                    android:text="A T H A Y A"/>
+                    android:text="KONTAK HANDPHONE"/>
 
             </RelativeLayout>
             <RelativeLayout
@@ -47,7 +47,7 @@
                 <ImageView
                     android:layout_width="390dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/pemkot2"
+                    android:src="@drawable/ic_person_pin_black_24dp"
 
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"/>

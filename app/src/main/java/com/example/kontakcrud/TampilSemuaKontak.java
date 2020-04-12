@@ -40,7 +40,7 @@ import java.util.HashMap;
 
 public class TampilSemuaKontak extends AppCompatActivity implements ListView.OnItemClickListener, View.OnClickListener{
 
-    private ImageView imageView;
+    /*private ImageView imageView;*/
     private ListView listView;
     private String JSON_STRING;
     @Override
@@ -48,9 +48,9 @@ public class TampilSemuaKontak extends AppCompatActivity implements ListView.OnI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tampil_semua_kontak);
         listView = (ListView) findViewById(R.id.listView);
-        imageView=(ImageView)findViewById(R.id.imgClose);
+        /*imageView=(ImageView)findViewById(R.id.imgClose);*/
         listView.setOnItemClickListener(this);
-        imageView.setOnClickListener(this);
+        /*imageView.setOnClickListener(this);*/
         getJSON();
     }
 
