@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Informasi Login"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/walletuser"
+                style="@style/modifiedEditText"
+                android:inputType="none"
+                android:editable="false"
+                android:maxLines="1"
+                android:hint="ID Akun"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/namauser"
+                style="@style/modifiedEditText"
+                android:inputType="none"
+                android:editable="false"
+                android:maxLines="1"
+                android:hint="Username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Tambah Kontak"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtNama"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Nama Depan"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtNamaBlk"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Nama Belakang"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtAlamat"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Alamat"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtJk"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Jenis Kelamin"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtNomor"
+                style="@style/modifiedEditText"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:maxEms="12"
+                android:hint="Nomor Handphone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/modifiedEditText"
+                android:hint="Foto Profil" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Foto"
+                android:id="@+id/btn_choose"
+                android:layout_alignBottom="@+id/in_date"
+                android:layout_toRightOf="@+id/in_date"
+                android:layout_toEndOf="@+id/in_date" />
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:id="@+id/imageView"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:text="Tambahkan"
+            android:id="@+id/buttonAdd"/>
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Daftar Kontak"
+            android:id="@+id/buttonView"/>
+        <Button
+            style="@style/loginButtonYe"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Daftar Foto"
+            android:id="@+id/buttonDoc"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
